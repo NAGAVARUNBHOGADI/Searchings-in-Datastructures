@@ -1,0 +1,23 @@
+//Searchings-in-Datastructures
+/*java program to print count of unique elements in array*/
+public class Main
+{
+	public static void main(String[] args) {
+	    int i,j,flag=0,c=0;
+		int a[]={1,2,3,4,5,6,7,8,9,1};
+		for(i=0;i<=a.length-1;i++)
+		{
+		    c=0;
+		    for(j=0;j<=a.length-1;j++)
+		    {
+		        if(a[i]==a[j])
+		        {
+		            c++;
+		        }
+		    }
+		    if(c==1)
+		    flag++;
+		}
+		System.out.println(flag);
+	}
+}
