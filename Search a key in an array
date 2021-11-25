@@ -1,0 +1,22 @@
+/*Searching a element in an array using c program*/
+#include<stdio.h>
+int main()
+{
+    int a[10],i,ele;
+    //a[10]={2,3,5,7,9,39,87,56,43,56}
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("Enter element you want to search");
+    scanf("%d",&ele);
+    for(i=0;i<10;i++)
+    {
+        if(a[i]==ele)
+        {
+        printf("Given element is found at %d position",i+1);
+        }
+   
+    }
+    return 0;
+}
