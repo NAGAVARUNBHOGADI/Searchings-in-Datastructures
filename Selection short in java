@@ -1,0 +1,33 @@
+//Searchings-in-Datastructures
+/*Selection short using Java*/
+public class Main
+{
+  public static void main (String[]args)
+  {
+    int i, j, min, temp, t;
+    int[] a = { 94, 10, 85, 6, 83, 54, 34 };
+    for (i = 0; i < a.length; i++)
+      {
+	min = i;
+	for (j = i + 1; j < a.length; j++)
+
+	  {
+	    if (a[j] < a[min])
+	      {
+		min = j;
+	      }
+	  }
+
+	if (min != i)
+	  {
+	    temp = a[min];
+	    a[min] = a[i];
+	    a[i] = temp;
+	  }
+      }
+    for (i = 0; i < a.length; i++)
+      {
+	System.out.println (a[i]);
+      }
+  }
+}
